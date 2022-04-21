@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1520px;
+  width: 100%;
+  background-color: white;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+li:hover > a {
+  text-decoration: underline;
+  color: crimson;
+}
+li > a {
+  color: black;
+}
+.nav {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  gap: 50px;
+  font-size: 20px;
+}
+.fa-solid.fa-bars {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+ul {
+  list-style: none;
+  justify-content: flex-start;
+  gap: 50px;
+  font-size: 20px;
+}
+
+.head {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 209px;
+  padding-bottom: 0px;
+  font-size: 4.5rem;
+}
+.sub {
+  font-size: 2.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 28px;
+  color: black;
+}
+#landing {
+  height: 100vh;
+  background-color: white;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#About {
+  height: 110vh;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5% 10%;
+  margin-bottom: 60px;
+}
+#about-img {
+  display: flex;
+  width: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+.about {
+  font-size: 2rem;
+  position: relative;
+  border-bottom: 3px solid black;
+}
+.about-text {
+  padding: 0% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+.meter {
+  height: 40px;
+  width: 400px;
+}
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+.column {
+  width: 50%;
+}
+.row {
+  display: flex;
+  width: 450px;
+}
+.skills {
+  padding-top: 50px;
+}
+.Testimonials {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+.Test {
+  margin-bottom: 60px;
+  padding: 5% 10%;
+}
+.test {
+  margin-bottom: 40px;
+}
+#Services {
+  height: 100vh;
+  background-color: white;
+  padding: 5% 10%;
+}
+.res {
+  border-bottom: solid black;
+}
+
+#Work {
+  height: 100vh;
+  background-color: white;
+  padding: 5% 10%;
+}
+
+#Blog {
+  height: 100vh;
+  background-color: white;
+  padding: 5% 10%;
+}
+
+#Contact {
+  height: 100vh;
+  background-color: white;
+  padding: 5% 10%;
+}
+.con {
+  font-size: 40px;
+  font-family: sans-serif;
+
+  transform: translate(25px, 0px);
+}
+address {
+  font-family: sans-serif;
+  color: white;
+  font-size: 20px;
+}
+body {
+  text-align: center;
+}
+form {
+  width: 50%;
+  height: 50px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  resize: none;
+}
+
+input {
+  display: block;
+  font-size: 20px;
+
+  margin-bottom: 50px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+
+input::placeholder {
+  font-size: 20px;
+}
+button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button {
+  background-color: black;
+  color: red;
+  border: 2px solid red;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 250px;
+}
+
+.button:hover {
+  background-color: red;
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .nav {
+    display: none;
+  }
+  .fa-solid.fa-bars {
+    display: block;
+  }
+}
