@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mock Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/396ec82b92.js"
       crossorigin="anonymous"
@@ -20,7 +21,6 @@
           <li><a class="navlink" href="#About">About</a></li>
           <li><a class="navlink" href="#Services">Resume</a></li>
           <li><a class="navlink" href="#Work">Portfolio</a></li>
-          <li><a class="navlink" href="#Blog">Blog</a></li>
           <li><a class="navlink" href="#Contact">Contact</a></li>
         </ul>
         <i class="fa-solid fa-bars"></i>
@@ -32,7 +32,7 @@
 
     <section id="About">
       <div class="column">
-        <div class="row">
+        <div data-aos="flip-up" class="row">
           <img src="./about.jpg" alt="Pic" id="about-img" />
           <ul>
             <li><strong>Name:</strong>Isma'eel Adams</li>
@@ -41,7 +41,7 @@
             <li><strong>Phone:</strong> (+27) 83 456 0860</li>
           </ul>
         </div>
-        <div class="skills">
+        <div data-aos="flip-down" class="skills">
           <h2>Skills</h2>
           <div class="skillsbar">
             <span
@@ -82,7 +82,7 @@
           </div>
         </div>
       </div>
-      <div class="about-text">
+      <div data-aos="flip-right" class="about-text">
         <h2 class="about">About</h2>
 
         <p class="lead">
@@ -105,7 +105,13 @@
         </p>
       </div>
     </section>
-    <div class="Test">
+
+    <div
+      data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      class="Test"
+    >
       <h2 class="test">Testimonials</h2>
       <img src="./test.jpg" alt="Testimonials" class="Testimonials" />
       <p>
@@ -113,14 +119,21 @@
         recusandae maxime ipsa aspernatur fuga voluptatibus mollitia libero
         nesciunt facere ad distinctio eius cumque magni hic animi quibusdam
         molestiae! Commodi, veritatis?
-      </p>
+      </p> 
+      </div>
+
+      <div data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      class="Test">
       <img src="./test1.jpg" alt="Testimonials" class="Testimonials" />
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate nemo
         laboriosam nihil adipisci asperiores magnam animi eveniet numquam
         perferendis, commodi a nisi eum amet eius laudantium debitis earum
         pariatur soluta.
-      </p>
+      </p> 
+      </div>
     </div>
 
     <section id="Services">
@@ -143,32 +156,60 @@
       </p>
     </section>
 
-    <section id="Blog">
-      <h2>Testimonials</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-        reprehenderit culpa accusamus vel. Soluta voluptatem sed, mollitia saepe
-        officiis beatae. Facilis sed necessitatibus quidem eum itaque,
-        doloremque molestiae quia ea.
-      </p>
-    </section>
-
     <section id="Contact">
-      <h2 class="con">Contact</h2>
+      <div class="contact-column">
+        <h2 class="con">Contact me</h2>
 
-      <address>
-        Konoha<br />
-        Tel:<a href="tel:021 683 1010">021 683 1010</a><br />
-        PO Box 10, Konoha
-      </address>
-      <form>
-        <input type="text" placeholder="Your Name*" />
-        <input type="text" placeholder="Your Email*" />
-        <input type="text" placeholder="Your Phone Number*" />
-        <input type="text" placeholder="Your Message*" />
-      </form>
+        <address>Tel:<a href="tel:021 683 1010">021 683 1010</a></address>
+        <form>
+          <input class="te" type="text" placeholder="Your Name*" />
+          <input class="te" type="text" placeholder="Your Email*" />
+          <input class="te" type="text" placeholder="Phone Number*" />
+          <input class="te" type="text" placeholder="Subject*" />
+          <input class="te" id="message" type="text" placeholder="Message*" />
+        </form>
 
-      <button class="button button">Submit</button>
+        <button class="button button">Send Message</button>
+      </div>
+
+      <div class="contact-text">
+        <h2 class="con">Get in touch</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugit
+          placeat voluptatem nemo. Porro iure magnam omnis, fugit repudiandae
+          quidem pariatur, officia dicta quae modi excepturi, vero quisquam sit
+          praesentium?
+        </p>
+        <ul class="list">
+          <li class="lists">
+            <i class="fa-solid fa-location-dot"></i>25 Linda Road Grassy Park
+            7945
+          </li>
+          <li class="lists">
+            <i class="fa-solid fa-mobile-screen-button"></i>+27 72 840 1187
+          </li>
+          <li class="lists">
+            <i class="fa-solid fa-envelope"></i>adamsismaeel387@gmail.com
+          </li>
+        </ul>
+        <div class="social">
+          <ul class="soc">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+          </ul>
+        </div>
+      </div>
     </section>
+    <footer>
+      <p>© Copyright <strong>Isma'eel</strong> All Rights Reserved</p>
+      <br />
+      Designed by <a href="adamsismaeel387@gmail.com">Isma'eel Adams</a>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

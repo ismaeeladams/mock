@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Akshar", sans-serif;
 }
 
 .navbar {
@@ -86,6 +89,7 @@ ul {
   align-items: flex-start;
   padding: 5% 10%;
   margin-bottom: 60px;
+  border: solid black;
 }
 #about-img {
   display: flex;
@@ -161,6 +165,21 @@ ul {
   height: 100vh;
   background-color: white;
   padding: 5% 10%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+
+.contact-column {
+  width: 50%;
+}
+.contact-text {
+  padding: 0% 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+  width: 50%;
 }
 .con {
   font-size: 40px;
@@ -192,10 +211,19 @@ input {
   font-size: 20px;
 
   margin-bottom: 50px;
-  width: 100%;
+
   padding: 12px 20px;
   margin: 20px 0;
   box-sizing: border-box;
+}
+
+.te {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+#message {
+  height: 138px;
 }
 
 input::placeholder {
@@ -212,6 +240,7 @@ button {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+  border-radius: 5rem;
 }
 
 button {
@@ -221,12 +250,23 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 250px;
+  margin-top: 420px;
 }
 
 .button:hover {
   background-color: red;
   color: black;
+}
+
+.lists {
+  padding-bottom: 10px;
+}
+.soc {
+  display: flex;
+}
+
+footer {
+  background-color: aqua;
 }
 
 @media screen and (max-width: 800px) {
